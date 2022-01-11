@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <!--External files -->
+    <link type="text/css" rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <!-- Header displayed on every tab -->
+    <!-- div tags should be "span" to limit extra css -->
+    <header>
+      <div id="header_content">
+        <div id="user_name"></div>
+        <div id="line_break"> - </div>
+        <div id="quotes"></div>
+        <i id="despair_button" class="fas fa-external-link-square-alt"></i>
+      </div>
+    </header>
+
+    <!-- Loading page -->
+    <div id="load_page" class="tab">
+        <div>Ensuring Everything Works Perfektly...</div>
+    </div>
+
+    <!--Cumalitive grades tab -->
+    <div id="grade_page" class="tab">
+      <table>
+        <thead id="table_head">
+          <tr>
+            <td class="table_columns" id="class_col">Class</td>
+            <td class="table_columns" id="letter_col">Letter</td>
+            <td class="table_columns" id="percent_col">Percent</td>
+            <td class="table_columns" id="points_col">Points</td>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- Everything here will be added by grades.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Displayed when user is not connected to myGann website -->
+    <div id="connection_alert" class="tab">
+      <div id="error_icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div id="error_text">Error connecting to website. To access grades, connect to the internet and login to MyGann.</div>
+      <div id="reload_button_error"><i class="fas fa-redo-alt"></i></div>
+      <div id="link_button_error"><i class="fas fa-link"></i></div>
+    </div>
+
+    <!-- Displays footer and tab options -->
+    <footer>
+      <div id="footer_content">
+        <i id="reload_button" class="fas fa-redo-alt"></i>
+        <i id="gann_button" class="fas fa-link"></i>
+        <i id="contact_button" class="fas fa-phone"></i>
+      </div>
+    </footer>
+
+    <!--Run JS scripts -->
+    <script src="quotes.js"></script>
+    <script src="grades.js" type="module"></script>
+    <script src="popup.js" type="module"></script>
+  </body>
+
+</html>

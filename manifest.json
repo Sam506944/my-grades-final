@@ -1,0 +1,18 @@
+{
+  "name": "myGrades",
+  "version": "1.0.0",
+  "description": "View yourGrades with myGrades.",
+  "manifest_version": 2,
+  "permissions": [
+    "https://gannacademy.myschoolapp.com/*"
+  ],
+  "icons": {
+    "128": "appicon.png",
+    "48": "appicon.png",
+    "32": "appicon.png",
+    "16": "appicon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
